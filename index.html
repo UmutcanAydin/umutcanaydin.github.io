@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4bdcb128ab.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="portofolio.css">
+    <title>Umutcan Aydin Portofolio</title>
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark py-0 px-5 fixed-top">
+        <a class="navbar-brand" href="#">Portofolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="aboutLink" class="nav-link" href="#aboutSection">About</a>
+            </li>
+            <li class="nav-item">
+              <a id="contactLink" class="nav-link" href="#contactSection">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://codepen.io/dashboard/" target="_blank"><i class="fab fa-codepen mr-2"></i>CodePen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/UmutcanAydin" target="_blank"><i class="fab fa-github mr-2"></i>Github</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid image d-flex justify-content-center">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-8 jumbotron text-center">
+                <div>
+                    <img class="jumbotronImage rounded-circle border border-dark rounded" src="images/Photo2.jpg" alt="">
+                </div>
+                <div">
+                    <h1 class="title-color">Umutcan Aydin</h1>
+                    <h2 class="d-none d-lg-block">Software Engineer, Amateur Pixel Artist, All Around Good Time Haver.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content mt-5">
+        <section class="container-fluid px-5 py-5 marginBottom">
+            <div class="row text-center">
+                <div class="col-12 mb-5">
+                    <h1 id="aboutSection" class="title-color">ABOUT ME</h1>
+                </div>
+                <div class="col-12">
+                    <p class="lead px-5">Born and raised in Kocaeli, Turkey. I have been using computers since i was a child. I was always very interested in them. I have graduated from Bahcesehir University, Software Engineering department in 2020. Our main 
+                      education language was Java, so it is the language i am most familiar with. But i also used many different languages like data analysis on Python, game and desktop application development with C#, back-end web development with Java Spring and front-end web development with HTML, CSS and Javascript.
+                      This simple portofolio was also created by me using Bootstrap 4. I am also very familiar with DBM systems like MySQL and Transact-SQL, also No-SQL systems like MongoDB and Cassandra.
+                      I am also interested in art. Picked up a lot of things as a hobby. Now i am also a guitar player and an amateur pixel artist. I am proficient in English and i have been trying to learn German for couple of months.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container-fluid px-5 py-3">
+          <div class="col-12 text-center mb-5">
+            <h1 class="title-color">PROJECTS</h1>
+          </div>
+            <div class="row align-items-center marginBottom">
+                <div class="col-md-6 order-2 order-md-1">
+                  <img class="img-fluid border rounded" src="images/Banking.PNG" alt="">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                  <div class="row justify-content-center">          
+                      <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                        <h3 class="mb-5 title-color">Banking Application</h3>
+                        <p class="lead">A banking application clone i made with Java while i was on my internship in Halkbank A.Ş. Users can do many operations like adding and updating customers to database. Adding cards and accounts to all customers.
+                            Used Mongodb as the database even though NoSQL databases are not meant to be used in banking applications because of it's structure. This project was experimental and is not meant to be used as a real life application.
+                        </p>
+                        <form action="https://github.com/UmutcanAydin/DemoBanking" method="get" target="_blank">
+                          <button type="submit" class="btn mt-3">Go to Github page<i class="fab fa-github ml-2"></i></button>
+                        </form>
+                      </div>          
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-center marginBottom">
+                <div class="col-md-6 text-center">
+                  <div class="row justify-content-center">          
+                      <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                        <h3 class="mb-5 title-color">Data Usage Charts for Web Application</h3>
+                        <p class="lead">I have written data usage charts for our capstone project in my final year in university. These carts are made with Javascript Chart.js library; integrated with our Firebase platform.
+                            I have a line chart, a pie chart and a bar chart. Line chart shows the usage by certain times. Pie chart shows which category of devices use the most energy, while bar chart shows the total usage of a device in a month.
+                        </p>
+                        <form action="https://github.com/UmutcanAydin/BEMOSSWebCharts" method="get" target="_blank">
+                          <button type="submit" class="btn mt-3">Go to Github page<i class="fab fa-github ml-2"></i></button>
+                        </form>
+                      </div>          
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img class="img-fluid border rounded" src="images/WebPie.PNG" alt="">
+                </div>
+              </div>
+              <div class="row align-items-center marginBottom">
+                <div class="col-md-6 order-2 order-md-1 text-center">
+                  <img class="img-fluid border rounded padbottom" src="images/MobileLine.PNG" alt="">
+                  <img class="img-fluid border rounded" src="images/MobilePie.PNG" alt="">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                  <div class="row justify-content-center">          
+                      <div class="col-10 col-lg-8 mb-5 mb-md-0">
+                        <h3 class="mb-5 title-color">Data Usage Charts for Mobile Application</h3>
+                        <p class="lead">Just like the web charts, these charts were made for our capstone project. Written in Java, later converted to Kotlin, there is a line chart and a pie chart with same capabilites as the web charts.</p>
+                        <div class="row justify-content-around">
+                          <form action="https://github.com/UmutcanAydin/BEMOSSMobileLineChart" method="get" target="_blank">
+                            <button type="submit" class="btn mt-3">Go to Line Chart Github page<i class="fab fa-github ml-2"></i></button>
+                          </form>
+                          <form action="https://github.com/UmutcanAydin/BEMOSSMobilePieChart" method="get" target="_blank">
+                            <button type="submit" class="btn mt-3">Go to Pie Chart Github page<i class="fab fa-github ml-2"></i></button>
+                          </form>
+                        </div>
+                      </div>          
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid px-5 py-3">
+          <div id="art" class="row justify-content-center">
+            <div class="col-12 text-center mb-5">
+              <h1 class="title-color">ART</h1>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <a href="art/Gwyn.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-7 mb-2 mb-sm-0">
+                        <img src="art/Gwyn.png" class="img-fluid">
+                    </a>
+                    <a href="art/DesertRoad.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-5">
+                        <img src="art/DesertRoad.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="art/sunny.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-9 mb-2 mb-sm-0">
+                        <img src="art/sunny.png" class="img-fluid">
+                    </a>
+                    <a href="art/Bojack.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+                        <img src="art/Bojack.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row">
+                  <a href="art/night.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-8 mb-2 mb-sm-0">
+                    <img src="art/night.png" class="img-fluid">
+                  </a>
+                  <a href="art/HarryandKim.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                    <img src="art/HarryandKim.png" class="img-fluid">
+                </a>
+                </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="contactSection" class="container-fluid px-5 py-5 mt-5">                
+                <div class="row">
+                    <div class="col-12 text-center">
+                      <h1 class="title-color">CONTACT</h1>
+                    </div>
+                </div>
+                <div class="row align-items-center text-center">
+                  <div class="col-6">
+                    <h3 class="title-color">Email Address:</h3>
+                  </div>
+                  <div class="col-6 mt-4 mt-md-5">
+                    <p class="lead">umutcanaydin1998@gmail.com</p>             
+                  </div>
+                </div>
+
+                <div class="row align-items-center text-center">
+                  <div class="col-6">
+                    <h3 class="title-color">Phone Number:</h3>
+                  </div>
+                  <div class="col-6 mt-4 mt-md-5">
+                    <p class="lead">+90/530-182-70-93</p>             
+                  </div>
+                </div>     
+        </section>
+  </section>
+  
+    
+    <script>
+      $('.nav-link').click(function(){    
+        var divId = $("#aboutLink").attr('href');
+        $('html, body').animate({
+          scrollTop: $("#aboutLink").offset().top - 54
+        }, 100);
+      });
+
+      $('.nav-link').click(function(){    
+        var divId2 = $("#contactLink").attr('href');
+        $('html, body').animate({
+          scrollTop: $("#contactLink").offset().top - 54
+        }, 100);
+      });
+
+      $("#art").on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+</body>
+</html>
